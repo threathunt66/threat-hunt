@@ -40,7 +40,7 @@ Even within suspicious TLDs, looking at a single day's traffic isn't enough. Is 
 
 For the purpose of this analysis, we assume the attack occurred today and did not appear in the previous two days.
 
-This is where the **Adya Analysis** comes in. Instead of looking for "bad" things, we look for **"new" things**. We collect endpoint DNS logs from the past two days and mathematically subtract the baseline.
+This is where the **[Adya Analysis](/blog/adya-hypothesis)** comes in. Instead of looking for "bad" things, we look for **"new" things**. We collect endpoint DNS logs from the past two days and mathematically subtract the baseline.
 
 - **In Delta Dtect:** This process is handled automatically the moment you select a date. The backend dynamically shifts the baseline window, executes SentinelOne PowerQueries to retrieve the historical 48-hour data, compares it against today's traffic, and surfaces only the **net-new domains** that endpoints have never attempted to resolve before.
 
