@@ -5,7 +5,7 @@ import remarkGfm from "remark-gfm";
 import { getBlogBySlug } from "@/lib/blogLoader";
 import "highlight.js/styles/github.css";
 import { useEffect } from "react";
-
+import rehypeRaw from "rehype-raw";
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const blog = slug ? getBlogBySlug(slug) : undefined;
@@ -92,7 +92,7 @@ const BlogPost = () => {
         >
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
-            rehypePlugins={[rehypeHighlight]}
+            rehypePlugins={[rehypeHighlight, rehypeRaw]}
             components={{
               a: ({ href, children }) => {
                 const isExternal = href?.startsWith("http");
