@@ -16,7 +16,9 @@ As a threat hunter, I sometimes like to dedicate my hypothesis not around just T
 
 
 
-![Burner Dig Gif](/blogs/burner1.gif)
+<video autoplay loop muted playsinline style="width:100%; border-radius:10px;">
+  <source src="/blogs/burner1.mp4" type="video/mp4">
+</video>
 
 
 
