@@ -1,3 +1,4 @@
+import CyberSkullWatermark from "@/components/CyberSkullWatermark";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { getAllBlogs } from "@/lib/blogLoader";
@@ -71,11 +72,7 @@ const Index = () => {
 >
 
   {/* Watermark */}
-  <img
-    src="/logo.png"
-    alt="Threat Hunt Watermark"
-    className="absolute inset-0 m-auto w-[500px] opacity-[0.05] blur-[1px] pointer-events-none select-none"
-  />
+  <CyberSkullWatermark />
 
   {/* Content Wrapper */}
   <div className="relative z-10">
@@ -88,7 +85,7 @@ const Index = () => {
     </h1>
 
     <div
-      className="space-y-8 text-lg leading-8 text-foreground/85"
+      className="space-y-6 text-lg leading-8 text-foreground/85"
       style={{ fontFamily: "var(--font-serif)" }}
     >
       <p>
@@ -219,7 +216,13 @@ const Index = () => {
       </section>
 
       <div className="h-20 bg-gradient-to-br from-[#0b1118] via-[#0f1720] to-[#0b1118]" />
-    </div>
+
+      <footer className="border-t border-[#1f2937] py-6 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Threat-Hunt. All research and analysis are the intellectual property of Harish Tiwari.
+      </footer>
+
+      </div>
+    
   );
 };
 

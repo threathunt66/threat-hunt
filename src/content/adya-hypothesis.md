@@ -33,7 +33,8 @@ The concept is beautifully simple:
 
 ![Adya Concept Diagram](/blogs/adya-pic1.png)
 
-Why?Because logs have trust issues.  
+## Why?
+Because logs have trust issues.  
 They repeat themselves. A lot.
 
 ## Why It Works

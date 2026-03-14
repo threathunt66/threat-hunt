@@ -4,10 +4,12 @@ import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 import { getBlogBySlug } from "@/lib/blogLoader";
 import "highlight.js/styles/github.css";
+import { useEffect } from "react";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const blog = slug ? getBlogBySlug(slug) : undefined;
+  
 
   if (!blog) {
     return (
@@ -21,27 +23,30 @@ const BlogPost = () => {
     <div className="min-h-screen bg-background">
 
       {/* Navigation */}
-      <nav className="border-b border-border">
-        <div className="mx-auto max-w-4xl px-6 py-4 flex items-center gap-8">
-          <Link
-            to="/"
-            className="text-base font-semibold tracking-tight text-foreground"
-          >
-            Threat-hunt
-          </Link>
+<nav className="border-b border-border">
+  <div className="mx-auto max-w-5xl px-5 py-4 flex items-center gap-9">
 
-          <Link
-            to="/"
-            state={{ scrollTo: "blogs" }}
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            ← Back
-          </Link>
-        </div>
-      </nav>
+    <Link to="/" className="flex items-center">
+      <img
+        src="/logoone.png"
+        alt="Threat Hunt"
+        className="h-12 w-auto"
+      />
+    </Link>
+
+    <Link
+      to="/"
+      state={{ scrollTo: "blogs" }}
+      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+    >
+      ← Back
+    </Link>
+
+  </div>
+</nav>
 
       {/* Article */}
-      <article className="mx-auto max-w-4xl px-6 py-20">
+      <article className="mx-auto max-w-4xl px-6 py-10">
         <div
           className="
             prose prose-neutral max-w-none
