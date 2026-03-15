@@ -25,7 +25,6 @@ const BlogPost = () => {
     script.setAttribute("data-input-position", "bottom");
     script.setAttribute("data-theme", "noborder_light");
     script.setAttribute("data-lang", "en");
-
     script.crossOrigin = "anonymous";
     script.async = true;
 
@@ -45,17 +44,11 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
-
       {/* Navigation */}
       <nav className="border-b border-border">
         <div className="mx-auto max-w-5xl px-5 py-4 flex items-center gap-9">
-
           <Link to="/" className="flex items-center">
-            <img
-              src="/logoone.png"
-              alt="Threat Hunt"
-              className="h-12 w-auto"
-            />
+            <img src="/logoone.png" alt="Threat Hunt" className="h-12 w-auto" />
           </Link>
 
           <Link
@@ -65,7 +58,6 @@ const BlogPost = () => {
           >
             ← Back
           </Link>
-
         </div>
       </nav>
 
@@ -107,7 +99,7 @@ const BlogPost = () => {
                     {children}
                   </a>
                 );
-              }
+              },
             }}
           >
             {blog.content}
@@ -115,12 +107,11 @@ const BlogPost = () => {
         </div>
       </article>
 
-      {/* Comments Section */}
+      {/* Comments */}
       <div className="mx-auto max-w-4xl px-6 pb-20">
         <h2 className="text-xl font-semibold mb-6">Comments</h2>
         <div className="giscus"></div>
       </div>
-
     </div>
   );
 };
