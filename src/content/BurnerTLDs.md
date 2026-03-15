@@ -16,7 +16,7 @@ As a threat hunter, I sometimes like to dedicate my hypothesis not around just T
 
 
 
-![Burner GIF](/blogs/burner1.mp4)
+![Burner TLDs](/blogs/burner1.png)
 
 
 
