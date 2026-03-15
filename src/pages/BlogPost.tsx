@@ -66,14 +66,12 @@ const BlogPost = () => {
 
       <article className="mx-auto max-w-4xl px-6 py-10">
         <div className="prose prose-neutral max-w-none">
-
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeHighlight]}
           >
             {blog.content}
           </ReactMarkdown>
-
         </div>
       </article>
 
