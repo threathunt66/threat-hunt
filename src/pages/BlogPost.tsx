@@ -107,40 +107,6 @@ const BlogPost = () => {
                     {children}
                   </a>
                 );
-              },
-
-              img: ({ src, alt }) => {
-                if (src && src.endsWith(".mp4")) {
-                  return (
-                    <video
-                      controls
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      style={{
-                        maxWidth: "100%",
-                        borderRadius: "8px",
-                        marginTop: "20px",
-                        marginBottom: "20px"
-                      }}
-                    >
-                      <source src={src} type="video/mp4" />
-                    </video>
-                  );
-                }
-
-                return (
-                  <img
-                    src={src}
-                    alt={alt}
-                    style={{
-                      borderRadius: "8px",
-                      marginTop: "20px",
-                      marginBottom: "20px"
-                    }}
-                  />
-                );
               }
             }}
           >
