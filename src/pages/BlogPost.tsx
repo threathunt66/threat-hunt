@@ -4,10 +4,7 @@ import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 import { getBlogBySlug } from "@/lib/blogLoader";
 import { useEffect } from "react";
-<<<<<<< HEAD
 import "highlight.js/styles/github.css";
-=======
->>>>>>> 3a65980fdeb7f9bc4ae532d4b1008276fe88acc5
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -51,13 +48,8 @@ const BlogPost = () => {
       <nav className="border-b border-border">
         <div className="mx-auto max-w-5xl px-5 py-4 flex items-center gap-6">
 
-<<<<<<< HEAD
-          <Link to="/">
-            <img src="/logoone.png" alt="Threat Hunt" className="h-10" />
-=======
           <Link to="/" className="flex items-center">
             <img src="/logoone.png" alt="Threat Hunt" className="h-12 w-auto" />
->>>>>>> 3a65980fdeb7f9bc4ae532d4b1008276fe88acc5
           </Link>
 
           <Link
@@ -72,9 +64,6 @@ const BlogPost = () => {
       </nav>
 
       <article className="mx-auto max-w-4xl px-6 py-10">
-<<<<<<< HEAD
-        <div className="prose prose-neutral max-w-none">
-=======
         <div className="
           prose prose-neutral max-w-none
           prose-headings:font-serif
@@ -92,7 +81,6 @@ const BlogPost = () => {
           prose-img:rounded-md
           prose-img:shadow-md
         ">
->>>>>>> 3a65980fdeb7f9bc4ae532d4b1008276fe88acc5
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeHighlight]}
