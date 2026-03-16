@@ -16,7 +16,7 @@ As a threat hunter, I sometimes like to dedicate my hypothesis not around just T
 
 
 
-![Burner TLDs](/blogs/burner1.png)
+![Burner TLDs](/blogs/burner4.png)
 
 
 
