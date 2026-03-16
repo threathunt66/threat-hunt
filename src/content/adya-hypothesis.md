@@ -3,7 +3,7 @@ title: "The Adya Analysis"
 description: "A threat hunter’s overly simple accidental discovery."
 date: "2026-02-10"
 tags: ["Threat Hunting", "DNS", "Noise Reduction"]
-cover: "/blogs/adya-pic1.png"
+cover: "/blogs/adya-pic4.png"
 ---
 
 # The Adya Analysis: A Threat Hunter’s Overly Simple Accidental Discovery
@@ -31,7 +31,7 @@ The concept is beautifully simple:
 1. Assume the suspicious activity or incident happened today.  
 2. Ignore everything that also happened yesterday or the day before that.
 
-![Adya Concept Diagram](/blogs/adya-pic1.png)
+![Adya Concept Diagram](/blogs/adya-pic4.png)
 
 ## Why?
 Because logs have trust issues.  
